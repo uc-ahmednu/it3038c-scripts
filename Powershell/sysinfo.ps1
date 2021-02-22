@@ -6,6 +6,6 @@ function getIP {
 write-host(getIP)
 $IP = getIP
 $Date = Get-Date
-$Body = "This machine's IP is $IP. user is $env:username. Hostname is $. PowerShell Version. Today's date is $DATE"
+$Body = "This machine's IP is $IP. user is $env:username. Hostname is $env:COMPUTERNAME. PowerShell Version. Today's date is $DATE"
 
 write-host($Body)
