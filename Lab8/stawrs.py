@@ -7,7 +7,7 @@ url ='https://www.starwars.com/news/15-star-wars-quotes-to-use-in-everyday-life'
 response = requests.get(url)
 headers = response.headers
 body = response.text[:2000]
-	
+
 	
 # drill down into html to grab desired info -- quotes and "authors" of said quoteshtml = BeautifulSoup(response.text, 'html.parser')
 quotes = html.findAll('strong')
